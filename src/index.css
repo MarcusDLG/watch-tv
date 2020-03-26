@@ -69,6 +69,10 @@ main p {
   background-color: teal;
 }
 
+.showDescription:hover {
+  background-color: grey;
+}
+
 .featured {
   display: grid;
   grid-template-columns: 100%;
