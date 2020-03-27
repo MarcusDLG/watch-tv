@@ -1,24 +1,17 @@
 import React from 'react'
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
 
 const TvShow = (props) => {
-  const { name, popularity, country, image, overview } = props
+  const { name, image, id } = props
   return (
-    <li>
+    <li key={id}>
       <section className="showCard">
         <img
           src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${image}`}
           alt={name}
         ></img>
-        <section className="showDescription">
-          <h2>{name}</h2>
-          <p>{overview}</p>
-          <p>
-            <strong>Popularity: </strong>
-            {popularity}
-          </p>
-          <p>
-            <strong>Country of Origin:</strong> {country}
-          </p>
+        <section className="">
+          <Link to={`/tv/${id}`}>{name}</Link>
         </section>
       </section>
     </li>
