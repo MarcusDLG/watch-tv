@@ -26,6 +26,7 @@ const HomePage = (props) => {
     <>
       <h1>TV Shows!</h1>
       <section className="featured">
+        <h2>Featured TV Show!</h2>
         <li className="">
           <img
             src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${featuredShow.poster_path}`}
